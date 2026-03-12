@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,200 +10,218 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Gokul Raj</h2>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
 <!-- HOME -->
 
-<section class="home">
+<section id="home" class="home">
+    <img src="images/photo.jpg.jpeg" class="profile">
+
+<h1>Hi, I'm <span>Gokul Raj V</span></h1>
+
+<h3>Java Developer</h3>
+<h3>
+<span class="typing"></span>
+</h3>
+<p>
+Pre-Final Year B.Tech IT Student at  
+Vel Tech High Tech Engineering College
+</p>
+
+<div class="buttons">
+
+<a href="resume.pdf" class="btn">Download Resume</a>
+
+<a href="https://github.com/gokulrajv07" class="btn">
+Visit Github
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+    
+
+<h2>About Me</h2>
 
 <img src="images/photo.jpg.jpeg" class="profile">
 
-<h1>Hi, I'm Gokul Raj V</h1>
+<p>
 
-<h3>Java Developer</h3>
+I am a B.Tech Information Technology student passionate about
+software development and problem solving.
+
+I enjoy building web applications and learning new technologies
+like Java, JavaScript, and backend development.
+
+</p>
+
+</section>
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="edu-container">
+
+<div class="edu-card">
+
+<h3>SSLC</h3>
+
+<p>SRGDS Matric Higher Secondary School</p>
+
+<p>Tiruvannamalai</p>
+<p><b>93%</b></p>
+
+<p>2020-2021</p>
+
+</div>
+
+<div class="edu-card">
+
+<h3>HSC</h3>
+
+<p>SRGDS Matric Higher Secondary School</p>
+
+<p>Tiruvannamalai</p>
+<p><b>69%</b></p>
+
+<p>2022-2023</p>
+
+</div>
+<div class="edu-card">
+    <h3>COLLEGE</h3>
+
+<p>Veltech Hightech Dr.Rangarajan Dr.Sakuthula Engineering College</p>
+
+<p>Avadi,Chennai</p>
+<p><b>CGPA:7.83</b></p>
+
+<p>2023-2027</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card">
+
+<h3>The Essence of Dining</h3>
 
 <p>
-I am a pre Final-year Undergraduate Engineering student at  
-Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College, Chennai.
+Portfolio website celebrating culinary heritage.
+</p>
+
+<button onclick="showProject1()" class="btn">
+View Project
+</button>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>Stock Market Monitoring</h3>
+
+<p>
+Real-time stock monitoring with ML prediction.
+</p>
+
+<button onclick="showProject2()" class="btn">
+View Project
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>
+<i class="fa-solid fa-phone"></i> 9363650933
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+gokulrajv07@gmail.com
+</p>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Chennai, Tamil Nadu
 </p>
 
 <div class="social">
 
-<a href="https://github.com/gokulrajv07" target="_blank">
+<a href="https://github.com/gokulrajv07">
 <i class="fa-brands fa-github"></i>
 </a>
 
-<a href="https://www.linkedin.com/in/gokul-raj-i" target="_blank">
+<a href="https://www.linkedin.com/in/gokul-raj-i">
 <i class="fa-brands fa-linkedin"></i>
 </a>
 
 </div>
 
-<a href="#contact" class="btn">Contact Me</a>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="about">
-    <img src="images/photo.jpg.jpeg" class="profile">
-
-<h2>About Me</h2>
-
-<p>
-Java developer with strong foundation in Data Structures and Algorithms.
-Passionate about building efficient and scalable software solutions.
-Seeking opportunities to grow in the field of software development.
-</p>
-
-<div class="stats">
-
-<div>
-<h3>7.83</h3>
-<p>CGPA</p>
-</div>
-
-<div>
-<h3>2+</h3>
-<p>Projects</p>
-</div>
-
-</div>
-
-<a href="resume.pdf" download class="btn">Download Resume</a>
-
-</section>
-
-<!-- SKILLS -->
-
-<section class="skills">
-
-<h2>Skills</h2>
-
-<p class="subtitle">My technical level</p>
-
-<div class="skill-box">
-
-<h3 onclick="toggleSkill(this)">Programming Languages</h3>
-
-<div class="skill-content">
-<p>Java</p>
-<p>Python</p>
-<p>JavaScript</p>
-</div>
-
-</div>
-
-<div class="skill-box">
-
-<h3 onclick="toggleSkill(this)">IT Constructs</h3>
-
-<div class="skill-content">
-<p>Data Structures</p>
-<p>Algorithms</p>
-<p>OOP Concepts</p>
-</div>
-
-</div>
-
-<div class="skill-box">
-
-<h3 onclick="toggleSkill(this)">Technologies</h3>
-
-<div class="skill-content">
-<p>HTML</p>
-<p>CSS</p>
-<p>GitHub</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- EDUCATION -->
-
-<section class="education">
-
-<h2>Qualification</h2>
-
-<p class="subtitle">My personal journey</p>
-
-<div class="timeline">
-
-<div class="container left">
-<div class="content">
-<h3>SSLC</h3>
-<p>SRGDS Matric Higher Secondary School</p>
-<p>Tiruvannamalai</p>
-<span>2021</span>
-</div>
-</div>
-
-<div class="container right">
-<div class="content">
-<h3>Class 12th</h3>
-<p>SRGDS Matric Higher Secondary School</p>
-<p>Tiruvannamalai</p>
-<span>2023</span>
-</div>
-</div>
-
-<div class="container left">
-<div class="content">
-<h3>B.Tech IT</h3>
-<p>Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College</p>
-<p>Chennai</p>
-<span>2023 - 2027</span>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-<h2><i class="fa-solid fa-address-book"></i> Contact Me</h2>
-
-<div class="contact-info">
-
-<p><i class="fa-solid fa-phone"></i> 9363650933</p>
-
-<p><i class="fa-solid fa-envelope"></i> gokulrajv07@gmail.com</p>
-
-<p><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</p>
-
-</div>
-
-<form>
-
-<input type="text" placeholder="Name" required>
-
-<input type="email" placeholder="Email" required>
-
-<textarea placeholder="Message"></textarea>
-
-<button class="btn">Send Message</button>
-
-</form>
-
 </section>
 
 <footer>
 
-<p>© 2027 Gokul Raj V</p>
+<center>
+    <p>© 2027 Gokul Raj V</p>
+</center>
 
 </footer>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </body>
 </html>
